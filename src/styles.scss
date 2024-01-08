@@ -4,6 +4,7 @@ $widthLikeA4: 210mm;
 $heightLikeA4: 297mm;
 $mainFont: 'Poppins', sans-serif;
 $mainFontColor: #FFF;
+$secondaryFontColor: #2A2E36;
 $mainBackground: #FFF;
 $secondaryBackground: #2A2E36;
 $nameBackground: #B7C4CF;
@@ -32,8 +33,15 @@ a:visited {
         position: absolute;
         font-family: $mainFont;
         color: $mainFontColor;
-        margin: 20px 0px;
-        background-color: red;
+        background-color: $nameBackground;
+        top: 3em;
+        right: 0;
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            padding: 50px 50px;
+        }
     }
 
     .leftSiteWrapper {
@@ -91,7 +99,13 @@ a:visited {
 
             p {
                 margin: 0;
+
+                &:first-of-type {
+                    margin-top: 1em;
+                }
             }
+
+
         }
     }
 
