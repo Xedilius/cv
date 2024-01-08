@@ -167,7 +167,7 @@ a:visited {
 
             .vl {
                 border-left: 2px solid $secondaryFontColor;
-                height: 590px;
+                height: 158mm;
                 position: absolute;
                 top: 87mm;
                 right: 127mm;
@@ -215,7 +215,25 @@ a:visited {
                 }
             }
         }
+
+
     }
+}
+
+.downloadButton {
+    position: absolute;
+    top: 15mm;
+    left: 15mm;
+    background-color: red;
+    font-family: $mainFont;
+    font-size: 1.5em;
+    z-index: 999;
+    cursor: pointer;
+
+    &:hover {
+        background-color: green;
+    }
+
 }
 
 @media print {
@@ -224,5 +242,9 @@ a:visited {
         height: 297mm;
         margin: 0;
         padding: 0;
+
+        .downloadButton {
+            display: none;
+        }
     }
 }
