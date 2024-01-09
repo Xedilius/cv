@@ -179,15 +179,16 @@ a:visited {
                 background-color: $secondaryFontColor;
                 border-radius: 50%;
                 position: absolute;
-                right: 125.202mm;
+                right: 94.6%;
+                bottom: 17%;
             }
 
             #dot1 {
-                top: 162.3mm;
+                top: 28.8%;
             }
 
             #dot2 {
-                top: 85.5mm;
+                bottom: 44.1%;
             }
         }
 
@@ -218,23 +219,32 @@ a:visited {
 
 
     }
-}
 
-.downloadButton {
-    position: absolute;
-    top: 15mm;
-    left: 15mm;
-    background-color: red;
-    font-family: $mainFont;
-    font-size: 1.5em;
-    z-index: 999;
-    cursor: pointer;
+    .downloadButton {
+        position: absolute;
+        top: 15mm;
+        left: 45mm;
+        background-color: red;
+        font-family: $mainFont;
+        font-size: 1.5em;
+        z-index: 999;
+        cursor: pointer;
 
-    &:hover {
-        background-color: green;
+        &:hover {
+            background-color: green;
+        }
+
     }
 
+    .myPhoto {
+        position: absolute;
+        width: 30mm;
+        top: 13mm;
+        left: 13.5mm;
+    }
 }
+
+
 
 @media print {
     body {
@@ -244,6 +254,10 @@ a:visited {
         padding: 0;
 
         .downloadButton {
+            display: none;
+        }
+
+        .myPhoto {
             display: none;
         }
     }
